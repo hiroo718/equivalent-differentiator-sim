@@ -51,10 +51,10 @@ This production-ready script directly discretizes (C2D conversion) continuous-ti
 ## 🛠️ Credits (クレジット)
 
 [English]
-This code and its README were developed with the support of AI.
+This code was basically written by Hiroo Yamazaki, with comments and the README created with the support of AI.
 
 [日本語]
-このコードとREADMEはAIのサポートを得ました。
+このコードは基本的に山崎が作成し、コメント文とREADMEの作成はAIのサポートを得ました。
 ```python
 # 等価微分器 
 # equivalent-differentiator-sim
