@@ -34,16 +34,9 @@ The transfer function G(s) of an equivalent differentiator with a first-order la
 ## (ハイパスフィルタとの比較考察)
 
 [English]
-Although it closely resembles a first-order High-Pass Filter (HPF), there is a critical difference in design philosophy and behavior in practical applications.
-
+Comparing the transfer function of the high-pass filter and that of the equivalent differentiator reveals that their gains differ by a factor of the filter time constant $\tau$.Alternative phrasing:"If you compare the transfer functions of the high-pass filter and the equivalent differentiator, you will notice that their gains differ by the filter time constant $\tau$."
 [日本語]
-一見すると1次ハイパスフィルタ（\(G_{HPF}(s) = \frac{\tau s}{\tau s + 1}\)）と酷似していますが、実務における設計思想と挙動には決定的な違いがあります。
-
-| Item / 項目 | Equivalent Differentiator / 等価微分器 | 1st-Order HPF / 1次ハイパスフィルタ |
-| :--- | :--- | :--- |
-| **Main Purpose / 主目的** | Extracting **new physical quantities** (slopes/rates of change) <br> 変化率（傾き）という**新しい物理量の抽出** | **Removing unwanted components** (low-frequency drift, etc.) <br> 不要な低周波（直流うねり等）の**成分除去** |
-| **High-Freq Gain (s → ∞)** | Converges to \(\frac{1}{\tau}\) (Goes to **infinity** as τ → 0) <br> \(\frac{1}{\tau}\) に収束（τ を小さくすると**無限大に発散**） | Converges to 1 (0 dB) (Constant regardless of τ) <br> 1 (0 dB) に収束（τ によらず**一定**） |
-| **Simulation Pitfalls / 罠** | Highly unstable; easily blows up due to slight high-frequency noise. <br> わずかな高周波ノイズが激しく増幅され、破綻しやすい | High-frequency noise is never amplified beyond the input signal level. <br> 入力以上のノイズが勝手に増幅されることはない |
+ハイパスフィルタの伝達関数と等価微分器の伝達関数を比較すると、フィルタ時定数τ分ゲインが異なることに気が付くだろう。
 
 ---
 
