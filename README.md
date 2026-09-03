@@ -48,6 +48,9 @@ This production-ready script directly discretizes (C2D conversion) continuous-ti
 [日本語]
 ライブラリ（`scipy.signal`のC2D等）に依存せず、連続系の状態方程式からC2D変換（離散化）のアルゴリズム（テイラー展開6次項まで）を自作し、ステップ応答およびウェルチ法（Welch's method）による周波数解析を行うガチ仕様のコードです。
 
+## History
+For the theoretical background and story behind `func_c2d()`, see [History of func_c2d()](docs/HISTORY.md).
+
 ## 🛠️ Credits (クレジット)
 
 [English]
