@@ -24,7 +24,7 @@ The transfer function G(s) of an equivalent differentiator with a first-order la
 \[\dot{x}(t) = -\frac{1}{\tau} x(t) + u(t)\]
 
 ### Output Equation (出力方程式)
-\[y(t) = -\frac{1}{\tau^2} x(t) + \frac{1}{\tau} u(t)\]
+\[y(t) = -\frac{1}{\tau} x(t) + \frac{1}{\tau} u(t)\]
 
 *(Note: The configuration of coefficients may vary depending on the choice of state variables, but the system remains equivalent. / ※状態変数の取り方により係数の配置は変わりますが、システムとしては等価です)*
 
